@@ -6,7 +6,13 @@ public class App{
         System.out.println(letra);
         letra = '\u00E0';
         System.out.println(letra+" : "+Character.toUpperCase(letra));
-        Formatador f = new Formatador();
-        System.out.println(f.formataPalavra("Pão"));
+
+        //String regex = "[\\s.,;!?]";
+        String regex = "[\\p{Punct}\\p{Blank}]";
+        String frase = "Hoje e dia 1";
+        String[] palavras = frase.split(regex);
+        for(int i=0;i<palavras.length;i++){
+            System.out.println(palavras[i]);
+        }
     }
 }

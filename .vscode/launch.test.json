@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "Numerologia",
+                "projectName": "Numerologia",
+                "workingDirectory": "c:\\A_TP_Source\\Numerologia",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "Numerologia",
+                "projectName": "Numerologia",
+                "workingDirectory": "c:\\A_TP_Source\\Numerologia",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
