@@ -33,24 +33,19 @@ public class TestFormatador {
 
     @Test
     public void testaFraseSimples(){
-        String[] rEsp = {"HOJE","E","DIA","1"};
+        String rEsp = "HOJE E DIA 1";
         String frase = "Hoje e dia 1";
-        String[] rObs = f.formataFrase(frase);
-        assertEquals(rEsp.length,rObs.length);
-        for(int i=0;i<rEsp.length;i++){
-            assertEquals(rEsp[i],rObs[i]);
-        }
+        String rObs = f.formataFrase(frase);
+        
+        assertEquals(rEsp,rObs);
     }
 
     @Test
     public void testaFraseUmaPalavra(){
-        String[] rEsp = {"HOJE"};
+        String rEsp = "HOJE";
         String frase = "Hoje";
-        String[] rObs = f.formataFrase(frase);
-        assertEquals(rEsp.length,rObs.length);
-        for(int i=0;i<rEsp.length;i++){
-            assertEquals(rEsp[i],rObs[i]);
-        }
+        String rObs = f.formataFrase(frase);
+        assertEquals(rEsp,rObs);
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -60,12 +55,9 @@ public class TestFormatador {
 
     @Test
     public void testaFraseComplexa(){
-        String[] rEsp = {"HOJE","E","DIA","12","E","AMANHA","E","TERCA","DIA","DE","SALARIO"};
-        String frase = "Hoje e dia 12, e AmaNHa e Terca dia de SAlario !!!";
-        String[] rObs = f.formataFrase(frase);
-        assertEquals(rEsp.length,rObs.length);
-        for(int i=0;i<rEsp.length;i++){
-            assertEquals(rEsp[i],rObs[i]);
-        }
+        String rEsp = "HOJE E DIA 12 E AMANHA E TERCA DIA DE SALARIO";
+        String frase = "Hoje e dia 12, e AmaNHa e Terca dia de  SAlario !!!";
+        String rObs = f.formataFrase(frase);
+        assertEquals(rEsp,rObs);
     }
 }

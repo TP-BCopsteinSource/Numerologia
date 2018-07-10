@@ -22,12 +22,13 @@ public class Formatador{
     // As palavras da frase devem ser convertidas pelo metodo formataPalavra
     // Qualquer outro símbolo gera IllegalArgumentException
     // Retorna um array de palavras válidas 
-    public String[] formataFrase(String frase){
+    public String formataFrase(String frase){
         String regex = "[\\p{Punct}\\p{Blank}]+";
         String[] palavras = frase.split(regex);
+        String fraseF = "";
         for(int i=0;i<palavras.length;i++){
-            palavras[i] = formataPalavra(palavras[i]);
+            fraseF += formataPalavra(palavras[i])+" ";
         }
-        return palavras;
+        return fraseF.substring(0,fraseF.length()-1);
     }
 }
