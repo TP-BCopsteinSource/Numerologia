@@ -14,5 +14,8 @@ public class App{
         for(int i=0;i<palavras.length;i++){
             System.out.println(palavras[i]);
         }
+
+        Reducao r = new Reducao();
+        System.out.println(r.reducaoPalavra("TESTE12"));
     }
 }
