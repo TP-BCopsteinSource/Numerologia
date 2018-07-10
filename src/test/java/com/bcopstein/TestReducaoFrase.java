@@ -21,7 +21,7 @@ public class TestReducaoFrase{
         this.tipoTabela = tipoTabela;        
     }
 
-    @Parameters
+    @Parameters 
     public static Collection<Object[]> data(){
         return Arrays.asList(new Object[][] {
             {"PALAVRA",8,TipoTabela.PITAGORICA},
