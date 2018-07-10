@@ -145,7 +145,7 @@ public class Reducao{
         for(int i=0;i<lstPal.length;i++){
             soma += reducaoPalavra(lstPal[i]);
         }
-        return soma;
+        return reducaoPalavra(soma+"");
     }
 
     // Calcula a redução de uma data no formato dd/mm/aaaa

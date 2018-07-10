@@ -10,13 +10,13 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
-public class TestReducaoPalavra{
-    private String palavra;
+public class TestReducaoFrase{
+    private String frase;
     private int resEsp;
     private TipoTabela tipoTabela;
 
-    public TestReducaoPalavra(String palavra,int resEsp,TipoTabela tipoTabela){
-        this.palavra = palavra;
+    public TestReducaoFrase(String frase,int resEsp,TipoTabela tipoTabela){
+        this.frase = frase;
         this.resEsp = resEsp;
         this.tipoTabela = tipoTabela;        
     }
@@ -24,15 +24,9 @@ public class TestReducaoPalavra{
     @Parameters
     public static Collection<Object[]> data(){
         return Arrays.asList(new Object[][] {
-            {"OLA",1,TipoTabela.PITAGORICA},
-            {"TESTE12",9,TipoTabela.PITAGORICA},
-            {"A",1,TipoTabela.PITAGORICA},
-            {"Z",8,TipoTabela.PITAGORICA},
-            {"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890B",2,TipoTabela.PITAGORICA},
-            {"OLA",2,TipoTabela.CHALDEAN},
-            {"TESTE12",6,TipoTabela.CHALDEAN},
-            {"A",1,TipoTabela.CHALDEAN},
-            {"Z",7,TipoTabela.CHALDEAN}
+            {"PALAVRA",8,TipoTabela.PITAGORICA},
+            {"DUAS PALAVRAS",9,TipoTabela.PITAGORICA},
+            {"MUITAS PALAVRAS FORMAM UMA FRASE GRANDE",3,TipoTabela.PITAGORICA},
         });
     }
 
@@ -40,6 +34,6 @@ public class TestReducaoPalavra{
     public void testaReducao(){
         Reducao reducao = new Reducao();
         reducao.setTipoTabela(tipoTabela);
-        assertEquals(resEsp,reducao.reducaoPalavra(palavra));
+        assertEquals(resEsp,reducao.reducaoFrase(frase));
     }
 }
