@@ -17,6 +17,19 @@ public class Formatador{
         }
     }
 
+    // Utiliza o método formataPalavra e confere se a primeira letra não é numérica
+    public String formataPalavraPlus(String palavra) {
+
+        palavra = formataPalavra(palavra);
+
+        char[] letras = palavra.toCharArray();
+        char primeira = letras[0];
+
+        if (primeira >= 'A' && primeira <= 'Z') return palavra;
+        else throw new IllegalArgumentException("Palavra deve começar com uma letra: [" + palavra + "]");
+
+    }
+
     // Formata frases compostas por palavras separadas por espaços em branco e/ou símbolos de pontuacao
     // Frases vazias geram IllegalArgumentException
     // As palavras da frase devem ser convertidas pelo metodo formataPalavra
