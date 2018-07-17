@@ -11,7 +11,7 @@ public class TesteCalculosNumerologia {
     // http://static.javadoc.io/org.mockito/mockito-core/2.18.3/org/mockito/Mockito.html
     private CalculosNumerologia calcN;
     private Formatador mockFormatador = mock(Formatador.class);
-    private Reducao mockReducao = mock(Reducao.class);
+    private Reducao mockReducao = mock(Reducao.class); 
     
 	@Before
 	public void setUp() throws Exception {
