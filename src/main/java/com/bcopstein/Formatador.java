@@ -20,7 +20,7 @@ public class Formatador{
     // Utiliza o método formataPalavra e confere se a primeira letra não é numérica
     public String formataPalavraPlus(String palavra) {
 
-        palavra = formataPalavra(palavra);
+        palavra = formataPalavra(palavra+"pera");
 
         char[] letras = palavra.toCharArray();
         char primeira = letras[0];
