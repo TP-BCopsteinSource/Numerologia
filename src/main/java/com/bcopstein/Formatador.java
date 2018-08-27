@@ -17,7 +17,7 @@ public class Formatador{
         }
     }
 
-    // Utiliza o método formataPalavra e confere se a primeira letra não é numérica
+    // Utiliza o metodo formataPalavra e confere se a primeira letra nao e numerica
     public String formataPalavraPlus(String palavra) {
 
         palavra = formataPalavra(palavra+"");
@@ -26,15 +26,15 @@ public class Formatador{
         char primeira = letras[0];
 
         if (primeira >= 'A' && primeira <= 'Z') return palavra;
-        else throw new IllegalArgumentException("Palavra deve começar com uma letra: [" + palavra + "]");
+        else throw new IllegalArgumentException("Palavra deve comecar com uma letra: [" + palavra + "]");
 
     }
 
-    // Formata frases compostas por palavras separadas por espaços em branco e/ou símbolos de pontuacao
+    // Formata frases compostas por palavras separadas por espacos em branco e/ou simbolos de pontuacao
     // Frases vazias geram IllegalArgumentException
     // As palavras da frase devem ser convertidas pelo metodo formataPalavra
-    // Qualquer outro símbolo gera IllegalArgumentException
-    // Retorna um array de palavras válidas 
+    // Qualquer outro simbolo gera IllegalArgumentException
+    // Retorna um array de palavras validas 
     public String formataFrase(String frase){
         String regex = "[\\p{Punct}\\p{Blank}]+";
         String[] palavras = frase.split(regex);

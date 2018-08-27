@@ -2,8 +2,8 @@ package com.bcopstein;
 
 import java.util.regex.Pattern;
 
-// Todas as palavras só podem conter letras maiúsculas não acentudas e dígitos
-// Todas as frases devem ser formadas por palavras separadas por um espaço em branco cada
+// Todas as palavras so podem conter letras maiusculas nao acentudas e digitos
+// Todas as frases devem ser formadas por palavras separadas por um espaco em branco cada
 // As datas devem seguir o formato dd/mm/aaaa
 // Qualquer quebra destas regras deve retornar "IllegalArgumentExpression"
 //
@@ -148,8 +148,8 @@ public class Reducao{
         return reducaoPalavra(soma+"");
     }
 
-    // Calcula a redução de uma data no formato dd/mm/aaaa
-    // Se estiver fora do formato lança IllegalArgumentException
+    // Calcula a reducao de uma data no formato dd/mm/aaaa
+    // Se estiver fora do formato lanca IllegalArgumentException
     public int reducaoData(String data){
         if (!Pattern.matches("\\d{2}/\\d{2}/\\d{4}",data)){
             throw new IllegalArgumentException("Formato de data inválido!!");
