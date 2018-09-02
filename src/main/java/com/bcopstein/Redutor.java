@@ -8,10 +8,10 @@ import java.util.regex.Pattern;
 // Qualquer quebra destas regras deve retornar "IllegalArgumentExpression"
 //
 // Veja os tipos de tabelas na wiki do projeto
-public class Reducao{
+public class Redutor{
     private TipoTabela tipoTab;
 
-    public Reducao(){
+    public Redutor(){
         tipoTab = TipoTabela.PITAGORICA;
     }
 

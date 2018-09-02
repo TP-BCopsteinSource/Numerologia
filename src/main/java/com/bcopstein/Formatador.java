@@ -3,11 +3,11 @@ package com.bcopstein;
 import java.util.regex.Pattern;
 
 public class Formatador{
-    // Formata uma palavra da língua inglesa
-    // A palavra recebida so pode conter letras ou dígitos
-    // Se a palavra contiver qualquer outro tipo de símbolo deve retornar IllegalArgumentException
-    // Se a palavra estiver vazia também retorna a exceção
-    // Retorna a palavra em maíusculas 
+    // Formata uma palavra da lingua inglesa
+    // A palavra recebida so pode conter letras ou d�gitos
+    // Se a palavra contiver qualquer outro tipo de simbolo deve retornar IllegalArgumentException
+    // Se a palavra estiver vazia tambem retorna a excecao
+    // Retorna a palavra em maiusculas 
     public String formataPalavra(String palavra){
 		String newPal = palavra.toUpperCase();
         if (Pattern.matches("[A-Z0-9]+", newPal)){

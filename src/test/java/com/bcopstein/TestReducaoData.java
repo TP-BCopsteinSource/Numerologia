@@ -6,11 +6,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestReducaoData{
-    private Reducao reducao;
+    private Redutor reducao;
 
     @Before
     public void setup(){
-        reducao = new Reducao();
+        reducao = new Redutor();
     }
 
     @Test

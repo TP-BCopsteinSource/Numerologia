@@ -15,7 +15,7 @@ public class App{
             System.out.println(palavras[i]);
         }
 
-        Reducao r = new Reducao();
+        Redutor r = new Redutor();
         System.out.println(r.reducaoPalavra("TESTE12"));
     }
 }

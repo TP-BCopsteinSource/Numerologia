@@ -2,13 +2,13 @@ package com.bcopstein;
 
 // Ver os algoritmos de calculo na wiki do projeto
 // Todos os metodos geram IllegalArgumentException em caso de caracter ilegal
-public class CalculosNumerologia{
+public class Calculador{
     private Formatador formatador;
-    private Reducao reducao;
+    private Redutor reducao;
 
     // Recebe o redutor e o formatador a serem usados em todos os calculos
     // por injecao de dependencia
-    public CalculosNumerologia(Reducao reducao, Formatador formatador){
+    public Calculador(Redutor reducao, Formatador formatador){
         this.reducao = reducao;
         this.formatador = formatador;
     }
