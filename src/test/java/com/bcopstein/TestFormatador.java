@@ -10,7 +10,7 @@ public class TestFormatador {
 
     @Before
     public void setup(){
-        f = new Formatador();
+        f = new FormatadorImpl();
     }
 	@Test
 	public void testBasicoPalavra() {

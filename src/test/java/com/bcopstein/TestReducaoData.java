@@ -10,7 +10,7 @@ public class TestReducaoData{
 
     @Before
     public void setup(){
-        reducao = new Redutor();
+        reducao = new RedutorImpl();
     }
 
     @Test

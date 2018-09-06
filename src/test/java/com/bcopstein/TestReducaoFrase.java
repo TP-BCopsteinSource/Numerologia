@@ -32,7 +32,7 @@ public class TestReducaoFrase{
 
     @Test
     public void testaReducao(){
-        Redutor reducao = new Redutor();
+        Redutor reducao = new RedutorImpl();
         reducao.setTipoTabela(tipoTabela);
         assertEquals(resEsp,reducao.reducaoFrase(frase));
     }

@@ -38,7 +38,7 @@ public class TestReducaoPalavra{
 
     @Test
     public void testaReducao(){
-        Redutor reducao = new Redutor();
+        Redutor reducao = new RedutorImpl();
         reducao.setTipoTabela(tipoTabela);
         assertEquals(resEsp,reducao.reducaoPalavra(palavra));
     }
