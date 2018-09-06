@@ -34,7 +34,6 @@ public class Formatador{
     // Frases vazias geram IllegalArgumentException
     // As palavras da frase devem ser convertidas pelo metodo formataPalavra
     // Qualquer outro simbolo gera IllegalArgumentException
-    // Retorna um array de palavras validas 
     public String formataFrase(String frase){
         String regex = "[\\p{Punct}\\p{Blank}]+";
         String[] palavras = frase.split(regex);

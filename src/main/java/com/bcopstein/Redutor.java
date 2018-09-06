@@ -152,7 +152,7 @@ public class Redutor{
     // Se estiver fora do formato lanca IllegalArgumentException
     public int reducaoData(String data){
         if (!Pattern.matches("\\d{2}/\\d{2}/\\d{4}",data)){
-            throw new IllegalArgumentException("Formato de data inválido!!");
+            throw new IllegalArgumentException("Formato de data invalido!!");
         }else{
             int soma = Character.getNumericValue(data.charAt(0));
             soma += Character.getNumericValue(data.charAt(1));
