@@ -1,11 +1,10 @@
 package com.bcopstein;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
-import static org.junit.Assert.*;
 
-
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class TesteCalculosNumerologia {
     // http://static.javadoc.io/org.mockito/mockito-core/2.18.3/org/mockito/Mockito.html
@@ -13,7 +12,7 @@ public class TesteCalculosNumerologia {
     private Formatador mockFormatador = mock(Formatador.class);
     private Redutor mockReducao = mock(Redutor.class); 
     
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
         when(mockFormatador.formataFrase("Carlos Alberto Silveira da Silva")).thenReturn("CARLOS ALBERTO SIVEIRA DA SILVA");
         

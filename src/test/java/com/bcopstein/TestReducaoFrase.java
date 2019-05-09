@@ -1,27 +1,25 @@
 package com.bcopstein;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+
 import java.util.Arrays;
 import java.util.Collection;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
-
-@RunWith(Parameterized.class)
-public class TestReducaoFrase{
+public class TestReducaoFrase {
     private String frase;
     private int resEsp;
     private TipoTabela tipoTabela;
 
-    public TestReducaoFrase(String frase,int resEsp,TipoTabela tipoTabela){
+    public TestReducaoFrase(String frase, int resEsp, TipoTabela tipoTabela) {
         this.frase = frase;
         this.resEsp = resEsp;
-        this.tipoTabela = tipoTabela;        
+        this.tipoTabela = tipoTabela;
     }
-
-    @Parameters 
+/*
+    @ParameterizedTest
     public static Collection<Object[]> data(){
         return Arrays.asList(new Object[][] {
             {"PALAVRA",8,TipoTabela.PITAGORICA},
@@ -36,4 +34,5 @@ public class TestReducaoFrase{
         reducao.setTipoTabela(tipoTabela);
         assertEquals(resEsp,reducao.reducaoFrase(frase));
     }
+    */
 }
