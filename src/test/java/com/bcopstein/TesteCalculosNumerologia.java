@@ -14,8 +14,7 @@ public class TesteCalculosNumerologia {
     
 	@BeforeEach
 	public void setUp() throws Exception {
-        when(mockFormatador.formataFrase("Carlos Alberto Silveira da Silva")).thenReturn("CARLOS ALBERTO SIVEIRA DA SILVA");
-        
+        when(mockFormatador.formataFrase("Carlos Alberto Silveira da Silva")).thenReturn("CARLOS ALBERTO SIVEIRA DA SILVA");    
 		when(mockReducao.reducaoFrase("CARLOS ALBERTO SIVEIRA DA SILVA")).thenReturn(7);
 		when(mockReducao.reducaoData("11/04/2002")).thenReturn(1);
         

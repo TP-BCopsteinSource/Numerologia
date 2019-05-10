@@ -6,18 +6,18 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 public class TestReducaoPalavra {
-    @DisplayName("Testa valores para reducao")
+    @DisplayName("Testa  para reducao")
     @ParameterizedTest
     @CsvSource({
-            "OLA,1,TipoTabela.PITAGORICA",
-            "TESTE12,9,TipoTabela.PITAGORICA",
-            "A,1,TipoTabela.PITAGORICA",
-            "Z,8,TipoTabela.PITAGORICA",
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890B,2,TipoTabela.PITAGORICA",
-            "OLA,2,TipoTabela.CHALDEAN",
-            "TESTE12,6,TipoTabela.CHALDEAN",
-            "A,1,TipoTabela.CHALDEAN",
-            "Z,7,TipoTabela.CHALDEAN"
+            "OLA,1,PITAGORICA",
+            "TESTE12,9,PITAGORICA",
+            "A,1,PITAGORICA",
+            "Z,8,PITAGORICA",
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890B,2,PITAGORICA",
+            "OLA,2,CHALDEAN",
+            "TESTE12,6,CHALDEAN",
+            "A,1,CHALDEAN",
+            "Z,7,CHALDEAN"
     })
     public void testaReducao(String palavra, int resEsp, TipoTabela tipoTabela){
         Redutor reducao = new RedutorImpl();
