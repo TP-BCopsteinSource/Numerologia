@@ -16,6 +16,6 @@ public class App{
         }
 
         Redutor r = new RedutorImpl();
-        System.out.println(r.reducaoPalavra("TESTE12"));
+        System.out.println(r.reducaoPalavra("TESTE11"));
     }
 }
